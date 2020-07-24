@@ -76,5 +76,5 @@ def plot_samples(n):
     plt.show()
 
 
-plot_samples(4)
+plot_samples(0)
 
