@@ -50,6 +50,5 @@ abs_diff = np.abs(diff)
 
 # Column 5: sum of absolute value of data points in diff
 features = np.c_[features, np.sum(abs_diff, axis=1)]
-print(features[:5][:])
 
 

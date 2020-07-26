@@ -69,12 +69,16 @@ def random_rows(lo=0, hi=5, num=9):
     return outputs
 
 
-def plot_samples(n):
+def plot_samples(label):
     for i in range(9):
         plt.subplot(3, 3, i + 1)
-        plt.plot(random_rows()[n][i])
+        plt.plot(random_rows()[label][i])
     plt.show()
 
 
-plot_samples(0)
+def get_labels():
+    return train_data['labels'].values
+
+
+# plot_samples(0)
 
