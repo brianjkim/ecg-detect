@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 train_data = pd.read_csv('data/train.csv')
-#Take first row of train_data and graph
+# Take first row of train_data and graph
 # sample_data = train_data.iloc[[0]]
 # sample_data = sample_data.values.tolist()[0]
 # plt.plot(sample_data)
