@@ -1,10 +1,10 @@
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
-from load_data import get_labels
+from load_data import get_train_labels
 from features import features
 
-labels = get_labels()
+labels = get_train_labels()
 data = features
 
 train_data, test_data, train_labels, test_labels = train_test_split(data, labels, random_state=1)

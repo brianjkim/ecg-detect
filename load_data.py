@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 train_data = pd.read_csv('data/train.csv')
+test_data = pd.read_csv('data/test.csv')
 # Take first row of train_data and graph
 # sample_data = train_data.iloc[[0]]
 # sample_data = sample_data.values.tolist()[0]
@@ -11,6 +12,7 @@ train_data = pd.read_csv('data/train.csv')
 #
 # plt.show()
 train_data.rename(columns={'0.000000000000000000e+00.88': 'labels'}, inplace=True)
+test_data.rename(columns={'0.000000000000000000e+00.65': 'labels'}, inplace=True)
 # label_zeros = train_data[train_data.labels == 0]
 # num_rows_zeros = len(label_zeros.index)
 #
@@ -76,9 +78,11 @@ def plot_samples(label):
     plt.show()
 
 
-def get_labels():
+def get_train_labels():
     return train_data['labels'].values
 
 
-# plot_samples(0)
+def get_test_labels():
+    return test_data['labels'].values
 
+# plot_samples(0)
