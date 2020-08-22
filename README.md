@@ -14,5 +14,4 @@ The following confusion matrix and table show the outcome of the project:
 
 ![](img/confusion-matrix.png)
 
-
 ![](img/table.PNG)
