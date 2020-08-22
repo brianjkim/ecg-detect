@@ -5,6 +5,7 @@ from tensorflow.keras.utils import to_categorical
 import numpy as np
 
 
+# Trains the model
 model = define_model(train_coefficients_array(0, 1)[0])
 class_weight = {0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0}
 train_images = np.load('data/train_images.npy')

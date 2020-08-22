@@ -9,7 +9,6 @@ test_data = pd.read_csv('data/test.csv')
 # sample_data = sample_data.values.tolist()[0]
 # plt.plot(sample_data)
 # plt.title('Sample ECG Data')
-#
 # plt.show()
 train_data.rename(columns={'0.000000000000000000e+00.88': 'labels'}, inplace=True)
 test_data.rename(columns={'0.000000000000000000e+00.65': 'labels'}, inplace=True)

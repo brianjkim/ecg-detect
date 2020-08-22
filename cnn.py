@@ -97,7 +97,6 @@ if __name__ == "__main__":
 # all_train_images = coefficients_array()
 # np.save('data/train_images', all_train_images)
 
-#
 # array1 = coefficients_array(40000, 40001)
 # array1 = array1[0]
 # plt.imshow(np.asarray(array1), cmap='jet')

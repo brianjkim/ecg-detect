@@ -7,6 +7,7 @@ import itertools
 from sklearn.metrics import confusion_matrix
 
 
+# Tests the model
 model = load_model('data/cnn_model_weight2.h5')
 test_images = np.load('data/test_images.npy')
 test_images = np.expand_dims(test_images, axis=-1)
